@@ -1,2 +1,2 @@
 # BaekHG.github.io
-Github blog (review)
+>:pencil2: 배운 내용 정리!
