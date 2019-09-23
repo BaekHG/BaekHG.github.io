@@ -1,14 +1,12 @@
 2019년 9월 18일
 
-기초 정렬
----------
+# 기초 정렬
 
 ---
 
 > 일반적으로 알고리즘을 공부할 때 가장 먼저 풀어보는 문제는 **'정렬'** 문제이다. 정렬만큼 알고리즘의 **효율성 차이**를 확실히 보여주는 것은 없기 때문이다★★
 
-선택 정렬 (Selection Sort)
---------------------------
+# 선택 정렬 (Selection Sort)
 
 -	**시간 복잡도 : O(n^2)**
 -	**가장 작은 것**을 선택하여 **가장 앞으로** 보낸다!
@@ -19,24 +17,24 @@
 #include <stdio.h>
 
 int main(){
-	int i,j,min,index,temp;
-	int array[10] = {1, 10, 5 ,8 ,7 ,6 , 4 ,3 ,2 ,9};
-	for(i=0; i<10; i++ ){
-		min = 9999;
-		for(j=i; j<10; j++){
-			if(min > array[j]){
-				min = array[j];
-				index = j;
-			}
-		}
-		temp =array[i];
-		array[i] = array[index];
-		array[index] = temp;
-	}
-	for(i=0; i<10; i++){
-		printf("%d " ,array[i]);
-	}
-	return 0;
+    int i,j,min,index,temp;
+    int array[10] = {1, 10, 5 ,8 ,7 ,6 , 4 ,3 ,2 ,9};
+    for(i=0; i<10; i++ ){
+        min = 9999;
+        for(j=i; j<10; j++){
+            if(min > array[j]){
+                min = array[j];
+                index = j;
+            }
+        }
+        temp =array[i];
+        array[i] = array[index];
+        array[index] = temp;
+    }
+    for(i=0; i<10; i++){
+        printf("%d " ,array[i]);
+    }
+    return 0;
 }
 ```
 
@@ -46,8 +44,8 @@ int main(){
 
 ---
 
-버블 정렬 (Bubble Sort)
------------------------
+# 버블 정렬 (Bubble Sort)
+
 
 -	**시간 복잡도 : O(n^2)**
 -	옆에 있는 값과 비교해서 더 작은 값을 앞으로 보낸다.
@@ -56,22 +54,22 @@ int main(){
 ```C++
 #include <stdio.h>
 int main(){
-	int i,j,temp;
-	int array[10] = {1, 10, 5 ,8 ,7 ,6 , 4 ,3 ,2 ,9};
-	for (i=0; i<10; i++){
-		for(j=0; j<9-i; j++){
-			if(array[j] >array[j+1]){
-				temp = array[j];
-				array[j] = array[j+1];
-				array[j+1] = temp;
-			}
+    int i,j,temp;
+    int array[10] = {1, 10, 5 ,8 ,7 ,6 , 4 ,3 ,2 ,9};
+    for (i=0; i<10; i++){
+        for(j=0; j<9-i; j++){
+            if(array[j] >array[j+1]){
+                temp = array[j];
+                array[j] = array[j+1];
+                array[j+1] = temp;
+            }
 
-		}
-	}
-	for(i=0; i<10; i++){
-		printf("%d ", array[i]);
-	}
-	return 0;
+        }
+    }
+    for(i=0; i<10; i++){
+        printf("%d ", array[i]);
+    }
+    return 0;
 }
 ```
 
@@ -82,8 +80,7 @@ int main(){
 
 2019년 9월 20일
 
-삽입 정렬(Insertion Sort)
--------------------------
+# 삽입 정렬(Insertion Sort)
 
 -	**시간 복잡도 : O(n^2)**
 -	항상 왼쪽은 정렬이 되어있다. 즉, 자신이 멈출 포인트를 알 수 있다.
@@ -94,22 +91,22 @@ int main(){
 #include <stdio.h>
 
 int main(){
-	int i,j,tmp;
-	int array[10] = {1, 10, 5 ,8 ,7 ,6 ,4 ,3 ,2 ,9};
+    int i,j,tmp;
+    int array[10] = {1, 10, 5 ,8 ,7 ,6 ,4 ,3 ,2 ,9};
 
-	for (i=0; i<9; i++){
-		j=i;
-		while(array[j] > array[j+1] ){
-			tmp = array[j];
-			array[j] = array[j+1];
-			array[j+1] = tmp;
-			j--;
-		}
-	}
-	for(i=0; i<10; i++){
-		printf("%d ", array[i]);
-	}
-	return 0;
+    for (i=0; i<9; i++){
+        j=i;
+        while(array[j] > array[j+1] ){
+            tmp = array[j];
+            array[j] = array[j+1];
+            array[j+1] = tmp;
+            j--;
+        }
+    }
+    for(i=0; i<10; i++){
+        printf("%d ", array[i]);
+    }
+    return 0;
 }
 ```
 
@@ -120,8 +117,7 @@ int main(){
 
 2019년 9월 23일
 
-퀵 정렬 (Quick Sort)
---------------------
+# 퀵 정렬 (Quick Sort)
 
 -	평균 속도 : O(N*logN)
 -	최악시간복잡도 : O(N^2)
