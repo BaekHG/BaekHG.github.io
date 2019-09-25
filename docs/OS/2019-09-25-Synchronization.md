@@ -1,5 +1,6 @@
 2019년 9월 25일
-#Process Synchronization
+
+# Process Synchronization
 
 프로세스는 병렬로 실행이 될 수 있다. 하지만 동시에 접근했다하더라도 연산의 수행이 더 늦게 끝나는 프로세스의 결과값을 따른다. **즉,  공유 데이터의 동시접근은 데이터 불일치 문제를 야기할 수 있다!**
 
@@ -7,12 +8,13 @@
 
 
 ## Critical Section  (by race condition)
-`Race Condition` : 여러 객체가 하나의 데이터에 동시에 접근하려고 하는 경우.
- 각 프로세스에는 `Critical Section(임계 구역)`이라 불리는 코드가 존재한다. (공유 데이터에 접근하는 코드)
+`Race Condition` : 여러 객체가 하나의 데이터에 동시에 접근하려고 하는 경우.  
+ 각 프로세스에는 `Critical Section(임계 구역)`이라 불리는 코드가 존재한다. (공유 데이터에 접근하는 코드)  
+ 
  **동시에 여러 프로세스가 임계 구역 안에서 실행될 수 없다.**
 
 
-###Critical Section의 3가지 조건 
+### Critical Section의 3가지 조건 
 
 - `Mutual Exclusion(상호배제)` : 특정 프로세스가 임계 구역에서 실행되는 중이면 다른 프로세스는 접근할 수 없다.
 
