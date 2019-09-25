@@ -6,6 +6,8 @@
 
 -	:peach: OS
 
+	-	[Synchronization Problem](./docs/OS/2019-09-25-Synchronization.md)
+
 -	:lemon: JavaScript
 
 -	:snake: Python
