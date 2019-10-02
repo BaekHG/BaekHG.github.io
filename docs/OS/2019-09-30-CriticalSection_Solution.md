@@ -37,9 +37,9 @@
 - `문제점` : 방에 많이 들어가야 하는 사람과 적게 들어가야하는 사람간의 차이가 없게된다. 많이 들어가야 하는 사람의 경우 기다림는 시간이 매우 길어질 것이다. **즉, Mutual Exclusion은 되지만 bounded waiting이 되지 않는다.**
 
 ---
+## Solution
 
-Solution
-##Peterson's Algorithm
+### Peterson's Algorithm
 
 ![Peterson's_Alogorithm](./img/Peterson's_Alogorithm.png)
 
