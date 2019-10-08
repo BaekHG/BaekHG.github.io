@@ -215,6 +215,8 @@ int main(void){
 - 쪼개졌던 것들을 합치는 순간 정렬을 수행한다.
 - 정렬이 필요한 수행시간은 배열의 크기인 N이므로 `분할 수행시간 logN`과 `정렬 수행시간 N` 이 곱해져 시간복잡도는 **O(N*logN)** 이 된다.
 ![merge](./img/merge_sort2.png)
+
+
 ```C++
 #include <stdio.h>
 
