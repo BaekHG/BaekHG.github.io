@@ -190,3 +190,76 @@ int main(void){
 -	pivot값을 설정함에 따라 `최악시간복잡도`인 **O(n^2)** 이 나올 수 있다.
 	-	이미 정렬이 되어있는 경우, **분할 정복의 이점을 사용하지 못하는 경우.**
 	-	**But** 삽입정렬의 경우 이미 정렬이 되어있거나 거의 정렬이 되어있는 경우, 매우 효율적
+
+  ---
+
+  2019년 10월 5일
+
+  # 병합 정렬 (Merge Sort)
+
+  -	평균 속도 : O(N*logN)
+  - `분할 정복 방법`을 사용한 알고리즘
+  - `풀이 방식` :주어진 문제를 반으로 나눠 각자 계산하여 정렬한 후에 나중에 합친다.
+  - 퀵 정렬은 이미 정렬이 되어있는 경우 `최악시간복잡도`인 **O(n^2)** 가 나오는 반면 병합 정렬은 반을 나누고 나서 나중에 합치는 형식이므로 **최악의 경우에도 O(N*logN)** 이 보장된다.
+
+![wrong_version_2](./img/merge_sort1.png)
+
+```C++
+  #include <stdio.h>
+
+int number = 8;
+int sorted[8]; // 배열은 반드시 전역변수로
+
+
+void merge(int a[], int m, int middle, int n){
+	// m = 시작점, middle = 중간점 , n = 끝점
+	int i=m;
+	int j = middle + 1;
+	int k = m;
+	//작은 순서대로 배열에 삽입
+	while( i <= middle && j<=n){
+		if (a[i] <= a[j]){
+			sorted[k]= a[i];
+			i++;
+		}else{
+			sorted[k] = a[j];
+			j++;
+		}
+		k++;
+	}
+
+	if(i > middle){
+		for (int t = j; t <= n; t++){
+			sorted[k] = a[t];
+			k++;
+		}
+	}else{
+		for (int t = i; t <= middle; t++){
+			sorted[k] = a[t];
+			k++;
+		}
+	}
+
+	//정렬된 배열 삽입
+	for ( int t = m; t <= n; t++){
+		a[t] = sorted[t];
+	}
+}
+
+void mergeSort(int a[], int m, int n){
+	if (m<n){
+		int middle = (m+n) / 2;
+		mergeSort(a,m, middle);
+		mergeSort(a, middle+1 , n);
+		merge(a, m, middle, n);
+	}
+}
+
+int main(void) {
+	int array[number] = {7,6,5,8,3,5,9,1};
+	mergeSort(array, 0, number - 1);
+	for (int i =0; i< number; i++){
+		printf("%d ", array[i]);
+	}
+}
+```
