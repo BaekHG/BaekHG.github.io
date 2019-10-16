@@ -7,6 +7,6 @@
 	- [Critical Section](./docs/OS/2019-09-30-CriticalSection_Solution.md)
 - :green_apple: C++
 	- [Vector](./docs/C++/2019-09-26-vector.md)
-	- [Pair](.docs/C++/2019-10-15-pair.md)
+	- [Pair](./docs/C++/2019-10-15-pair.md)
 -	:lemon: JavaScript
 -	:snake: Python
