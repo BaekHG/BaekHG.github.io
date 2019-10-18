@@ -1,4 +1,5 @@
--	:outbox_tray: Git
+-	:outbox_tray: baekjoon
+	- [수 정렬하기 2 (2751번)](./docs/Baekjoon/2019-10-18-endl.md)
 -	:nail_care: Algorithm
 	-	[기초 정렬](./docs/Algorithm/2019-09-18-basic_sorting.md)
 	-	[심화 정렬](./docs/Algorithm/2019-09-18-deep_sorting.md)
@@ -10,3 +11,4 @@
 	- [Pair](./docs/C++/2019-10-15-pair.md)
 -	:lemon: JavaScript
 -	:snake: Python
+-	:outbox_tray: 코딩문제
