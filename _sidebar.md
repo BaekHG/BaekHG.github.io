@@ -3,6 +3,7 @@
 -	:nail_care: Algorithm
 	-	[기초 정렬](./docs/Algorithm/2019-09-18-basic_sorting.md)
 	-	[심화 정렬](./docs/Algorithm/2019-09-18-deep_sorting.md)
+	- [스택(Stack)](./docs/Algorithm/2019-11-05-stack.md)
 -	:peach: OS
 	-	[Synchronization Problem](./docs/OS/2019-09-25-Synchronization.md)
 	- [Critical Section](./docs/OS/2019-09-30-CriticalSection_Solution.md)
