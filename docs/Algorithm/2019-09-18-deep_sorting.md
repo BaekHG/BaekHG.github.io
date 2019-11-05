@@ -110,21 +110,19 @@ int main(void) {
 ```C++
 #include <iostream>
 using namespace std;
+
 int main(){
+	int heap[10] = {3,4,2,5,1,6,8,7,9};
+	int number = 10;
 
-	int heap[9] = {7, 6, 5, 8, 3, 4, 9, 1, 2};
-	int number = 9;
-
-	// 전체 트리 구조를 힙 구조로 바꾼다.
+	//전체 트리구조를 힙구조로 바꾼다.
 	for(int i=1; i<number; i++){
+		int c = i; //자신 노드의 인덱스
 
-		int c = i; // 자식 노드의 인덱스
-
-		while(c != 0){
-			int root = (c - 1) / 2;  // 부모 노드의 인덱스
+		while(c!=0){
+			int root = (c-1) / 2; // 부모 노드의 인덱스
 
 			if(heap[root] < heap[c]){
-
 				int temp = heap[root];
 				heap[root] = heap[c];
 				heap[c] = temp;
@@ -133,26 +131,25 @@ int main(){
 		}
 	}
 
-	// 크기를 줄여가며 반복적으로 힙을 구성
+	//크기를 줄여가며 반복적 힙을 구성
 	for(int i=number-1; i>=0; i--){
-
 		int temp = heap[0];
 		heap[0] = heap[i];
 		heap[i] = temp;
 
-		int root = 0; // 루트 노드의 인덱스
+		int root = 0; //루트 노드의 인덱스
 		int c = 1;
 
-		while(c < i){
-			c = 2 * root + 1; // 자식 노드의 인덱스
+		while(c<i){
+			c = 2*root + 1;//자식노드 인덱스
 
-			// 자식 중에 더 큰 값 찾기
-			if(heap[c] < heap[c+1] && c < i - 1){
+			//자식 중에 더 큰 값 찾기
+			if(heap[c] < heap[c+1] && c<i-1){
 				c++;
 			}
 
-			// 루트보다 자식이 더 크다면 교환
-			if(heap[root] < heap[c] && c < i){
+			//루트보다 자식이 더 크다면 교환
+			if(heap[root] < heap[c] && c<i) {
 				int temp = heap[root];
 				heap[root] = heap[c];
 				heap[c] = temp;
@@ -162,10 +159,56 @@ int main(){
 		}
 	}
 
-	for(int i=0; i<number; i++){
+	for (int i =0; i<number; i++){
 		cout << heap[i] << ' ';
 	}
 
 	return 0;
 }
 ```
+
+---
+2019-11-05
+# 계수 정렬(Counting Sort)
+
+- ` 크기를 기준`으로 정렬
+- `'범위조건'` 이 있는 경우에 한해 매우 빠른 알고리즘
+- 범위조건이 있다면 `시간복잡도 O(N)`을 가짐
+
+
+```C++
+#include <stdio.h>
+
+int main(void){
+	int temp;
+	int count[5];
+	int array[30] = {
+	1, 3, 2, 4, 3, 2 ,5, 3, 1, 2,
+	3, 4, 4, 3, 5, 1, 2, 3, 5, 2,
+	3, 1, 4, 3, 5, 1, 2, 1, 1, 1};
+
+	for (int i=0; i<5; i++){ // 1~5까지이므로 count 를 모두 0으로 초기화해준다.
+		count[i] = 0;
+	}
+	for(int i=0; i<30; i++){ // 배열에서 중복되는 숫자의 갯수를 세어준다.
+		count[array[i]- 1]++;
+	}
+	for(int i =0; i<5; i++){ // 1부터5까지 자연스럽게 정렬이 된 상태로 출력이 된다.
+		if(count[i] != 0){
+			for(int j=0; j<count[i]; j++){
+				printf("%d", i+1);
+			}
+		}
+	}
+	return 0;
+}
+```
+
+- 배열의 숫자들이 나타난 횟수를 저장해준다.
+`1` : 8번
+`2` : 6번
+`3` : 8번
+`4` : 4번
+`5` : 4번
+- 다음 범위만큼 count 배열을 출력해주기만 하면 정렬이 완성된 것을 알 수 있다.
+- **범위만 안다면** 모든 데이터에 한 번만 접근하면 되기 때문에 매우 효율적인 알고리즘이다.
