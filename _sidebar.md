@@ -3,7 +3,8 @@
 -	:nail_care: Algorithm
 	-	[기초 정렬](./docs/Algorithm/2019-09-18-basic_sorting.md)
 	-	[심화 정렬](./docs/Algorithm/2019-09-18-deep_sorting.md)
-	- [스택(Stack)](./docs/Algorithm/2019-11-05-stack.md)
+	- [스택(Stack)](./docs/Algorithm/2019-11-05_stack.md)
+	- [큐(Queue)](docs\Algorithm\2019-11-05_queue.md)
 -	:peach: OS
 	-	[Synchronization Problem](./docs/OS/2019-09-25-Synchronization.md)
 	- [Critical Section](./docs/OS/2019-09-30-CriticalSection_Solution.md)
@@ -12,4 +13,4 @@
 	- [Pair](./docs/C++/2019-10-15-pair.md)
 -	:lemon: JavaScript
 -	:snake: Python
--	:outbox_tray: 코딩문제
+-	:outbox_tray:
