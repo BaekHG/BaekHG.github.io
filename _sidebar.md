@@ -12,5 +12,6 @@
 	- [Vector](./docs/C++/2019-09-26-vector.md)
 	- [Pair](./docs/C++/2019-10-15-pair.md)
 -	:lemon: JavaScript
+ 	- [Hash bang](./docs/JavaScript/2019-11-24-hash_bang.md)
 -	:snake: Python
 -	:outbox_tray:
