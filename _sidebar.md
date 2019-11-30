@@ -1,5 +1,11 @@
--	:outbox_tray: baekjoon
-	- [수 정렬하기 2 (2751번)](./docs/Baekjoon/2019-10-18-endl.md)
+-	:outbox_tray: ReactJS
+	<!-- - [Component]() -->
+	- [function과 class](./docs/ReactJS/2019-11-30-function_class.md)
+	- [PropTypes](./docs/ReactJS/2019-11-29-propTypes.md)
+	<!-- - [State]() -->
+	- [setState](./docs/ReactJS/2019-11-30-setState.md)
+	- [Component lifecycle](./docs/ReactJS/2019-11-30-component_lifecycle.md)
+<!-- -	:snake: Python -->
 -	:nail_care: Algorithm
 	-	[기초 정렬](./docs/Algorithm/2019-09-18-basic_sorting.md)
 	-	[심화 정렬](./docs/Algorithm/2019-09-18-deep_sorting.md)
@@ -15,9 +21,5 @@
  	- [Hash bang](./docs/JavaScript/2019-11-24-hash_bang.md)
 	- [let, var, const 차이](./docs/JavaScript/2019-11-26-let_var_const.md)
 	- [map과 reduce](./docs/JavaScript/2019-11-29-map_reduce.md)
--	:outbox_tray: ReactJS
-	<!-- - [Component]() -->
-	- [PropTypes](./docs/ReactJS/2019-11-29-propTypes.md)
-	<!-- - [State]() -->
-	- [setState](./docs/ReactJS/2019-11-30-setState.md)
-<!-- -	:snake: Python -->
+-	:outbox_tray: baekjoon
+	- [수 정렬하기 2 (2751번)](./docs/Baekjoon/2019-10-18-endl.md)
