@@ -1,6 +1,6 @@
 -	:outbox_tray: ReactJS
 	<!-- - [Component]() -->
-	- [function과 class](./docs/ReactJS/2019-11-30-function_class.md)
+	- [functional component와 class component](./docs/ReactJS/2019-11-30-function_class.md)
 	- [PropTypes](./docs/ReactJS/2019-11-29-propTypes.md)
 	<!-- - [State]() -->
 	- [setState](./docs/ReactJS/2019-11-30-setState.md)
@@ -21,5 +21,6 @@
  	- [Hash bang](./docs/JavaScript/2019-11-24-hash_bang.md)
 	- [let, var, const 차이](./docs/JavaScript/2019-11-26-let_var_const.md)
 	- [map과 reduce](./docs/JavaScript/2019-11-29-map_reduce.md)
+	- [async&await](docs\JavaScript\2019-11-30-async_await.md)
 -	:outbox_tray: baekjoon
 	- [수 정렬하기 2 (2751번)](./docs/Baekjoon/2019-10-18-endl.md)
