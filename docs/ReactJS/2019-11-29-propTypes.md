@@ -1,4 +1,4 @@
-#propTypes
+# propTypes
 부모 컴포넌트에서 자식 컴포넌트로 props를 전달 받을 때 우리가 원하는 props이 우리가 갖고 있는 props인지 체크하는 방법이 필요하고 `propTypes`가 필요한 이유이다.
 
 다음 코드를 보자.
