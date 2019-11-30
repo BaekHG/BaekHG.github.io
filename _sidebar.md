@@ -16,7 +16,8 @@
 	- [let, var, const 차이](./docs/JavaScript/2019-11-26-let_var_const.md)
 	- [map과 reduce](./docs/JavaScript/2019-11-29-map_reduce.md)
 -	:outbox_tray: ReactJS
-	- [Component]()
+	<!-- - [Component]() -->
 	- [PropTypes](./docs/ReactJS/2019-11-29-propTypes.md)
-	- [State]()
+	<!-- - [State]() -->
+	- [setState](./docs/ReactJS/2019-11-30-setState.md)
 <!-- -	:snake: Python -->
