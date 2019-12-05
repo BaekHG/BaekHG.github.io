@@ -18,7 +18,7 @@
 	- [Vector](./docs/C++/2019-09-26-vector.md)
 	- [Pair](./docs/C++/2019-10-15-pair.md)
 -	:lemon: JavaScript
- 	- [Hash bang](./docs/JavaScript/2019-11-24-hash_bang.md)
+ 	- [Hashbang](./docs/JavaScript/2019-11-24-hash_bang.md)
 	- [let, var, const 차이](./docs/JavaScript/2019-11-26-let_var_const.md)
 	- [map과 reduce](./docs/JavaScript/2019-11-29-map_reduce.md)
 	- [async&await](docs\JavaScript\2019-11-30-async_await.md)
