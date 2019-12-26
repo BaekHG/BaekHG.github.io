@@ -22,5 +22,6 @@
 	- [let, var, const 차이](./docs/JavaScript/2019-11-26-let_var_const.md)
 	- [map과 reduce](./docs/JavaScript/2019-11-29-map_reduce.md)
 	- [async&await](docs\JavaScript\2019-11-30-async_await.md)
--	:outbox_tray: baekjoon
+-	:outbox_tray: PS-baekjoon
 	- [수 정렬하기 2 (2751번)](./docs/Baekjoon/2019-10-18-endl.md)
+	- [소수점 설정하기! (fixed,precision) (1008번)](./docs\Baekjoon\2019-12-26.md)
