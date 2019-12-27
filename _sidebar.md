@@ -25,3 +25,4 @@
 -	:outbox_tray: PS-baekjoon
 	- [수 정렬하기 2 (2751번)](./docs/Baekjoon/2019-10-18-endl.md)
 	- [소수점 설정하기! (fixed,precision) (1008번)](./docs\Baekjoon\2019-12-26.md)
+	- [C++ 빠른 입출력 방법](./docs\Baekjoon\2019-12-27-cin&cout.md)
