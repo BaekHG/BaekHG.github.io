@@ -1,11 +1,12 @@
 -	:outbox_tray: React
 	<!-- - [Component]() -->
-	- [functional component와 class component](./docs/ReactJS/2019-11-30-function_class.md)
+	- [JSX](./docs/ReactJS/2020-05-22-JSX.md)
+	- [Functional Component와 Class Component](./docs/ReactJS/2019-11-30-function_class.md)
 	- [PropTypes](./docs/ReactJS/2019-11-29-propTypes.md)
 	<!-- - [State]() -->
 	- [setState](./docs/ReactJS/2019-11-30-setState.md)
 	- [Component lifecycle](./docs/ReactJS/2019-11-30-component_lifecycle.md)
-	- [JSX](./docs/ReactJS/2020-05-22-JSX.md)
+
 <!-- -	:snake: Python -->
 -	:nail_care: Algorithm
 	-	[기초 정렬](./docs/Algorithm/2019-09-18-basic_sorting.md)
